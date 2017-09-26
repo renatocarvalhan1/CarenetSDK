@@ -17,15 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "CarenetSDK"
   s.version      = "0.0.1"
-  s.summary      = "A short description of CarenetSDK."
+  s.summary      = "CarenetSDK."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "The CarenetSDK is a completely customizable widget that can be used in any iOS app."
 
   s.homepage     = "https://github.com/renatocarvalhan1/CarenetSDK"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -88,8 +87,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files = "CarenetSDK", "CarenetSDK/**/*.{h,m,swift}"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+  s.source_files  = "CarenetSDK", "CarenetSDK/**/*.{h,m}"
+  s.exclude_files = "CarenetSDK/Exclude"
+  # s.source_files = "CarenetSDK", "CarenetSDK/**/*.{h,m,swift}"
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
   # s.public_header_files = "Classes/**/*.h"
 
