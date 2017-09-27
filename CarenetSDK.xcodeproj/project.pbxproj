@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0537BD1F7BE29600526B0B /* CarentSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0537B81F7BE29600526B0B /* CarentSDK.swift */; };
+		0D0537BE1F7BE29600526B0B /* CNBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0537B91F7BE29600526B0B /* CNBaseViewController.swift */; };
+		0D0537BF1F7BE29600526B0B /* CNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0537BA1F7BE29600526B0B /* CNViewController.swift */; };
+		0D0537C01F7BE29600526B0B /* CNWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0537BB1F7BE29600526B0B /* CNWebService.swift */; };
+		0D0537C11F7BE29600526B0B /* SDK.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0537BC1F7BE29600526B0B /* SDK.storyboard */; };
 		0DDEE6C11F7ADFDB00C23CD7 /* CarenetSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDEE6BF1F7ADFDB00C23CD7 /* CarenetSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A3CF6E76B84E9EB9A7D70F /* Pods_CarenetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA1BC881A900B27CE697983 /* Pods_CarenetSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0537B81F7BE29600526B0B /* CarentSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarentSDK.swift; sourceTree = "<group>"; };
+		0D0537B91F7BE29600526B0B /* CNBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNBaseViewController.swift; sourceTree = "<group>"; };
+		0D0537BA1F7BE29600526B0B /* CNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNViewController.swift; sourceTree = "<group>"; };
+		0D0537BB1F7BE29600526B0B /* CNWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNWebService.swift; sourceTree = "<group>"; };
+		0D0537BC1F7BE29600526B0B /* SDK.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SDK.storyboard; sourceTree = "<group>"; };
 		0DDEE6BC1F7ADFDB00C23CD7 /* CarenetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CarenetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDEE6BF1F7ADFDB00C23CD7 /* CarenetSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CarenetSDK.h; sourceTree = "<group>"; };
 		0DDEE6C01F7ADFDB00C23CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +63,11 @@
 		0DDEE6BE1F7ADFDB00C23CD7 /* CarenetSDK */ = {
 			isa = PBXGroup;
 			children = (
+				0D0537B81F7BE29600526B0B /* CarentSDK.swift */,
+				0D0537B91F7BE29600526B0B /* CNBaseViewController.swift */,
+				0D0537BA1F7BE29600526B0B /* CNViewController.swift */,
+				0D0537BB1F7BE29600526B0B /* CNWebService.swift */,
+				0D0537BC1F7BE29600526B0B /* SDK.storyboard */,
 				0DDEE6BF1F7ADFDB00C23CD7 /* CarenetSDK.h */,
 				0DDEE6C01F7ADFDB00C23CD7 /* Info.plist */,
 			);
@@ -121,6 +136,7 @@
 				TargetAttributes = {
 					0DDEE6BB1F7ADFDB00C23CD7 = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -147,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0537C11F7BE29600526B0B /* SDK.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +207,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0537BE1F7BE29600526B0B /* CNBaseViewController.swift in Sources */,
+				0D0537C01F7BE29600526B0B /* CNWebService.swift in Sources */,
+				0D0537BD1F7BE29600526B0B /* CarentSDK.swift in Sources */,
+				0D0537BF1F7BE29600526B0B /* CNViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 622312B5C121C3874C9F5D95 /* Pods-CarenetSDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -313,6 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.carenet.CarenetSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -321,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5148134386C878CFC053BE38 /* Pods-CarenetSDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
