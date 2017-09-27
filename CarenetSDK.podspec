@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = "MIT"
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -87,8 +87,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CarenetSDK", "CarenetSDK/**/*.{h,m}"
+  s.source_files  = "CarenetSDK", "CarenetSDK/**/*.{h,m,swift}"
   s.exclude_files = "CarenetSDK/Exclude"
+  s.resources = "CarenetSDK/**/*"
   # s.source_files = "CarenetSDK", "CarenetSDK/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
 
