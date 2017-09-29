@@ -15,9 +15,20 @@ public class CarentSDK: NSObject {
         return instance
     }()
     
+    var baseUrl: String = {
+        "http://dev.crnt.com.br"
+        //        "http://api.pareaqui.com.br"
+    }()
+    
+    var bundle: Bundle = {
+        Bundle(for: CarentSDK.self)
+    }()
+    
+    var deviceID: String = {
+      UIDevice.current.identifierForVendor!.uuidString
+    }()
+    
     public func startSDKWithClientId(window: UIWindow) {
-        
-        let bundle = Bundle(identifier: "br.com.carenet.CarenetSDK")
         
         let storyboard = UIStoryboard(name: "SDK", bundle: bundle)
         let centerController = UINavigationController(rootViewController: storyboard.instantiateInitialViewController()!)
