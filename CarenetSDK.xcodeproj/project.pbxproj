@@ -18,6 +18,7 @@
 		0D57F45D1F7E872E00C924DC /* CNBaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57F45C1F7E872E00C924DC /* CNBaseEntity.swift */; };
 		0D57F4601F7E8AA000C924DC /* CNUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57F45F1F7E8AA000C924DC /* CNUser.swift */; };
 		33A3CF6E76B84E9EB9A7D70F /* Pods_CarenetSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA1BC881A900B27CE697983 /* Pods_CarenetSDK.framework */; };
+		D33E44E61F814DE600D7F14F /* CNSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E44E51F814DE600D7F14F /* CNSignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5148134386C878CFC053BE38 /* Pods-CarenetSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarenetSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarenetSDK/Pods-CarenetSDK.release.xcconfig"; sourceTree = "<group>"; };
 		622312B5C121C3874C9F5D95 /* Pods-CarenetSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarenetSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarenetSDK/Pods-CarenetSDK.debug.xcconfig"; sourceTree = "<group>"; };
 		CCA1BC881A900B27CE697983 /* Pods_CarenetSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarenetSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33E44E51F814DE600D7F14F /* CNSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNSignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				0D57F4481F7E82F300C924DC /* CNBaseViewController.swift */,
 				0D57F4491F7E82F300C924DC /* CNViewController.swift */,
+				D33E44E51F814DE600D7F14F /* CNSignViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -251,13 +254,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarenetSDK-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -273,6 +279,7 @@
 				0D57F4601F7E8AA000C924DC /* CNUser.swift in Sources */,
 				0D57F45D1F7E872E00C924DC /* CNBaseEntity.swift in Sources */,
 				0D57F4561F7E82F300C924DC /* CNViewController.swift in Sources */,
+				D33E44E61F814DE600D7F14F /* CNSignViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
