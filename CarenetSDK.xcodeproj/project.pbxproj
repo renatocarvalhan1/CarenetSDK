@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0D57F4521F7E82F300C924DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D57F4441F7E82F300C924DC /* Assets.xcassets */; };
-		0D57F4531F7E82F300C924DC /* CarenetSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D57F4451F7E82F300C924DC /* CarenetSDK.h */; };
 		0D57F4541F7E82F300C924DC /* CarentSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57F4461F7E82F300C924DC /* CarentSDK.swift */; };
 		0D57F4551F7E82F300C924DC /* CNBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57F4481F7E82F300C924DC /* CNBaseViewController.swift */; };
 		0D57F4561F7E82F300C924DC /* CNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D57F4491F7E82F300C924DC /* CNViewController.swift */; };
@@ -23,7 +22,6 @@
 
 /* Begin PBXFileReference section */
 		0D57F4441F7E82F300C924DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D57F4451F7E82F300C924DC /* CarenetSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarenetSDK.h; sourceTree = "<group>"; };
 		0D57F4461F7E82F300C924DC /* CarentSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarentSDK.swift; sourceTree = "<group>"; };
 		0D57F4481F7E82F300C924DC /* CNBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNBaseViewController.swift; sourceTree = "<group>"; };
 		0D57F4491F7E82F300C924DC /* CNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CNViewController.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 		0DDEE6BE1F7ADFDB00C23CD7 /* CarenetSDK */ = {
 			isa = PBXGroup;
 			children = (
-				0D57F4451F7E82F300C924DC /* CarenetSDK.h */,
 				0D57F4461F7E82F300C924DC /* CarentSDK.swift */,
 				0D57F4441F7E82F300C924DC /* Assets.xcassets */,
 				0D57F4471F7E82F300C924DC /* controllers */,
@@ -159,7 +156,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D57F4531F7E82F300C924DC /* CarenetSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

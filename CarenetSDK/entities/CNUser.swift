@@ -79,12 +79,12 @@ class CNUser: CNBaseEntity {
         }
     }
     
-    static var current: User? {
+    static var current: CNUser? {
         get {
             if let userInfo = UserDefaults.standard.dictionary(forKey: "current_user") {
-                let user = User()
+                let user = CNUser()
                 
-                for attribute in User.dbAttributes {
+                for attribute in CNUser.dbAttributes {
                     user.setValue(userInfo[attribute], forKey: attribute)
                 }
                 
@@ -97,7 +97,7 @@ class CNUser: CNBaseEntity {
             if let user = current {
                 var userInfo: [String : Any] = [:]
                 
-                for attribute in User.dbAttributes {
+                for attribute in CNUser.dbAttributes {
                     userInfo[attribute] = user.value(forKey: attribute)!
                 }
                 
