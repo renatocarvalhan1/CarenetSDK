@@ -28,7 +28,7 @@ public class CarentSDK: NSObject {
       UIDevice.current.identifierForVendor!.uuidString
     }()
     
-    public func startSDKWithClientId(window: UIWindow) {
+    public func startSDKWithClientId() {
         
         let storyboard = UIStoryboard(name: "SDK", bundle: bundle)
         let centerController = UINavigationController(rootViewController: storyboard.instantiateInitialViewController()!)

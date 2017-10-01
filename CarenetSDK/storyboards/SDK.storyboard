@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bOD-6z-7xm">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,20 +19,20 @@
                         <viewControllerLayoutGuide type="bottom" id="SDV-Cc-TOU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qaJ-jr-X82">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5N1-Rt-CIR">
-                                <rect key="frame" x="44" y="195" width="326" height="346"/>
+                                <rect key="frame" x="40" y="156.5" width="240" height="255"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sincronize sua conta preenchendo os campos abaixo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-YC-s0w">
-                                        <rect key="frame" x="11" y="56" width="304" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sincronize sua conta preenchendo os campos abaixo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eze-YC-s0w">
+                                        <rect key="frame" x="11" y="56" width="218" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.33300891518592834" green="0.33328679203987122" blue="0.33305191993713379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQQ-67-hNa">
-                                        <rect key="frame" x="8" y="298" width="307" height="40"/>
+                                        <rect key="frame" x="8" y="207" width="221" height="40"/>
                                         <color key="backgroundColor" red="0.33300891519999998" green="0.333286792" blue="0.33305191989999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="ryZ-N5-0mu"/>
@@ -41,16 +41,19 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXK-Rc-HV2" customClass="JVFloatLabeledTextField">
-                                        <rect key="frame" x="11" y="141" width="304" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usário ou e-mail" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXK-Rc-HV2" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="11" y="113" width="218" height="29"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Z9-8E-0PF">
-                                        <rect key="frame" x="14" y="196" width="304" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Z9-8E-0PF" customClass="JVFloatLabeledTextField">
+                                        <rect key="frame" x="11" y="147" width="218" height="29"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -59,15 +62,22 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="5N1-Rt-CIR" secondAttribute="height" multiplier="120:127" id="GYy-at-K0s"/>
+                                    <constraint firstItem="7Z9-8E-0PF" firstAttribute="leading" secondItem="GXK-Rc-HV2" secondAttribute="leading" id="QI5-Cz-jl3"/>
                                     <constraint firstAttribute="trailing" secondItem="cQQ-67-hNa" secondAttribute="trailing" constant="11" id="Ugs-fe-CUd"/>
                                     <constraint firstItem="Eze-YC-s0w" firstAttribute="leading" secondItem="5N1-Rt-CIR" secondAttribute="leading" constant="11" id="XDb-lM-GcG"/>
                                     <constraint firstAttribute="trailing" secondItem="Eze-YC-s0w" secondAttribute="trailing" constant="11" id="bcX-2F-oue"/>
+                                    <constraint firstItem="GXK-Rc-HV2" firstAttribute="leading" secondItem="Eze-YC-s0w" secondAttribute="leading" id="dAF-UR-74J"/>
                                     <constraint firstAttribute="bottom" secondItem="cQQ-67-hNa" secondAttribute="bottom" constant="8" id="dpe-yK-sLv"/>
+                                    <constraint firstItem="7Z9-8E-0PF" firstAttribute="height" secondItem="GXK-Rc-HV2" secondAttribute="height" id="hVk-go-veK"/>
                                     <constraint firstItem="cQQ-67-hNa" firstAttribute="leading" secondItem="5N1-Rt-CIR" secondAttribute="leading" constant="8" id="kyt-sW-8hL"/>
+                                    <constraint firstItem="GXK-Rc-HV2" firstAttribute="centerY" secondItem="5N1-Rt-CIR" secondAttribute="centerY" id="l44-k4-1MZ"/>
+                                    <constraint firstItem="7Z9-8E-0PF" firstAttribute="top" secondItem="GXK-Rc-HV2" secondAttribute="bottom" constant="5" id="nrP-WQ-JVC"/>
+                                    <constraint firstItem="GXK-Rc-HV2" firstAttribute="trailing" secondItem="Eze-YC-s0w" secondAttribute="trailing" id="teC-0g-t8C"/>
+                                    <constraint firstItem="7Z9-8E-0PF" firstAttribute="trailing" secondItem="GXK-Rc-HV2" secondAttribute="trailing" id="vX0-r7-HXg"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-strava" translatesAutoresizingMaskIntoConstraints="NO" id="agY-5m-hXk">
-                                <rect key="frame" x="145.66666666666669" y="115.66666666666669" width="122.66666666666669" height="122.33333333333331"/>
+                                <rect key="frame" x="115" y="109.5" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="agY-5m-hXk" secondAttribute="height" multiplier="1:1" id="loF-Pv-ulQ"/>
                                 </constraints>

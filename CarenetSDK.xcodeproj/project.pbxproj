@@ -188,6 +188,7 @@
 		0DDEE6B31F7ADFDB00C23CD7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Renato Carvalhan";
 				TargetAttributes = {
@@ -204,6 +205,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0DDEE6B21F7ADFDB00C23CD7;
 			productRefGroup = 0DDEE6BD1F7ADFDB00C23CD7 /* Products */;
